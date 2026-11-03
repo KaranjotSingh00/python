@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudTech | Python AWS Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 10%;
+            background: #111c33;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background: #0284c7;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .services {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 35px;
+            width: 250px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111c33;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>CloudTech.</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="#services">Services</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <h1>Welcome to <span>CloudTech</span></h1>
+
+        <p>
+            Building modern applications using Python,
+            AWS, Linux and DevOps technologies.
+        </p>
+
+        <a href="#services" class="button">
+            Explore Technologies
+        </a>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <h2>My Technologies</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Building scalable web applications using Flask.</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS</h3>
+                <p>Deploying applications using Amazon EC2 and cloud infrastructure.</p>
+            </div>
+
+            <div class="card">
+                <h3>DevOps</h3>
+                <p>Automation, CI/CD pipelines and deployment workflows.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CloudTech | Powered by Python Flask & AWS</p>
+    </footer>
+
+</body>
+</html>
